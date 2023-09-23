@@ -3,6 +3,9 @@ import { render } from 'solid-js/web';
 
 import './index.css';
 import App from './App';
+import { Route, Router, Routes } from '@solidjs/router';
+import About from './pages/about';
+import Test from './pages/test/[id]';
 
 const root = document.getElementById('root');
 
@@ -13,4 +16,17 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-render(() => <App />, root!);
+render(
+  () => (
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" component={App} />
+          <Route path="/about" component={About} />
+          <Route path="/test/:id" component={Test} />
+        </Routes>
+      </Router>
+    </>
+  ),
+  root!,
+);

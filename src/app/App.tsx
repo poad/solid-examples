@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import styles from './App.module.css';
 import { Counter } from '../components/Counter';
 import { type JSX } from 'solid-js/jsx-runtime';
+import { A } from '@solidjs/router';
+import styles from './App.module.css';
 
-function App(): JSX.Element {
+export default function App(): JSX.Element {
   return (
     <div class={styles.App}>
       <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          <A href="/about">about</A>
         </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
+        <p>
+          <A href="/test/hoge">test</A>
+        </p>
       </header>
       <main>
         <Counter />
@@ -26,5 +20,3 @@ function App(): JSX.Element {
     </div>
   );
 }
-
-export default App;
