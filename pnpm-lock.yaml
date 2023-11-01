@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^3.0.3
     version: 3.0.3
   solid-devtools:
-    specifier: ^0.27.7
-    version: 0.27.7(solid-js@1.8.5)(vite@4.5.0)
+    specifier: ^0.27.9
+    version: 0.27.9(solid-js@1.8.5)(vite@4.5.0)
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -1251,7 +1251,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001559
-      electron-to-chromium: 1.4.572
+      electron-to-chromium: 1.4.574
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: true
@@ -1433,8 +1433,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /electron-to-chromium@1.4.572:
-    resolution: {integrity: sha512-RlFobl4D3ieetbnR+2EpxdzFl9h0RAJkPK3pfiwMug2nhBin2ZCsGIAJWdpNniLz43sgXam/CgipOmvTA+rUiA==}
+  /electron-to-chromium@1.4.574:
+    resolution: {integrity: sha512-bg1m8L0n02xRzx4LsTTMbBPiUd9yIR+74iPtS/Ao65CuXvhVZHP0ym1kSdDG3yHFDXqHQQBKujlN1AQ8qZnyFg==}
     dev: true
 
   /es-abstract@1.22.3:
@@ -2855,8 +2855,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /solid-devtools@0.27.7(solid-js@1.8.5)(vite@4.5.0):
-    resolution: {integrity: sha512-eRUk+mzszEM6nt+TNT2iU2J6T1F0NSJCRFPP4Y78Wt8HVAepnwB6H2WAE1S/5EH8PL0+NIHsVdHI/+6ReZPO5g==}
+  /solid-devtools@0.27.9(solid-js@1.8.5)(vite@4.5.0):
+    resolution: {integrity: sha512-J9bmoe+08K04DBv+x0YFCZbZf7zjPvdaAZnGDs9AfPhKZRYv3Y6ng0ttP/niB9HzffTMEJo8PlfLo1WwiQgmyQ==}
     peerDependencies:
       solid-js: ^1.7.0
       solid-start: ^0.2.20
