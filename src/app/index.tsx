@@ -3,7 +3,7 @@ import { render } from 'solid-js/web';
 
 import './index.css';
 import App from './App';
-import { Route, Router, Routes } from '@solidjs/router';
+import { Route, Router } from '@solidjs/router';
 import About from './pages/about';
 import Test from './pages/test/[id]';
 
@@ -20,11 +20,9 @@ render(
   () => (
     <>
       <Router>
-        <Routes>
-          <Route path="/" component={App} />
-          <Route path="/about" component={About} />
-          <Route path="/test/:id" component={Test} />
-        </Routes>
+        <Route path="/" component={App} />
+        <Route path="/about" component={About} />
+        <Route path="/test/:id" component={Test} />
       </Router>
     </>
   ),
