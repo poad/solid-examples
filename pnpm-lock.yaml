@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@solidjs/router':
-    specifier: ^0.10.5
-    version: 0.10.5(solid-js@1.8.8)
+    specifier: ^0.10.6
+    version: 0.10.6(solid-js@1.8.8)
   solid-js:
     specifier: ^1.8.8
     version: 1.8.8
@@ -988,8 +988,8 @@ packages:
       solid-js: 1.8.8
     dev: true
 
-  /@solidjs/router@0.10.5(solid-js@1.8.8):
-    resolution: {integrity: sha512-gxDeiyc97j8/UqzuuasZsQYA7jpmlwjkfpcay11Q2xfzoKR50eBM1AaxAPtf0MlBAdPsdPV3h/k8t5/XQCuebA==}
+  /@solidjs/router@0.10.6(solid-js@1.8.8):
+    resolution: {integrity: sha512-PiJO/wsAh0+0mmAIw/+gGgZa0xeMzKGrITWvBfNQ0wiAwNzOF/T0Bm10uhyaWdxPu9td0xK2LuMnC//4CXqnyA==}
     peerDependencies:
       solid-js: ^1.8.6
     dependencies:
@@ -1342,8 +1342,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001572
-      electron-to-chromium: 1.4.619
+      caniuse-lite: 1.0.30001574
+      electron-to-chromium: 1.4.622
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
     dev: true
@@ -1372,8 +1372,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite@1.0.30001572:
-    resolution: {integrity: sha512-1Pbh5FLmn5y4+QhNyJE9j3/7dK44dGB83/ZMjv/qJk86TvDbjk0LosiZo0i0WB0Vx607qMX9jYrn1VLHCkN4rw==}
+  /caniuse-lite@1.0.30001574:
+    resolution: {integrity: sha512-BtYEK4r/iHt/txm81KBudCUcTy7t+s9emrIaHqjYurQ10x71zJ5VQ9x1dYPcz/b+pKSp4y/v1xSI67A+LzpNyg==}
     dev: true
 
   /chalk@2.4.2:
@@ -1500,8 +1500,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /electron-to-chromium@1.4.619:
-    resolution: {integrity: sha512-gW4qlnHxa49kp9kXlLdvnwdYEUlQRio30QOR61YfOQU8MaC/NGHWiJhyMMUl1EwFHbbzQTxvP1Dypdw95DjIow==}
+  /electron-to-chromium@1.4.622:
+    resolution: {integrity: sha512-GZ47DEy0Gm2Z8RVG092CkFvX7SdotG57c4YZOe8W8qD4rOmk3plgeNmiLVRHP/Liqj1wRiY3uUUod9vb9hnxZA==}
     dev: true
 
   /es-abstract@1.22.3:
@@ -2620,8 +2620,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /postcss@8.4.32:
-    resolution: {integrity: sha512-D/kj5JNu6oo2EIy+XL/26JEDTlIbB8hw85G8StOE6L74RQAVVP5rej6wxCNqyMbR4RkPfqvezVbPw81Ngd6Kcw==}
+  /postcss@8.4.33:
+    resolution: {integrity: sha512-Kkpbhhdjw2qQs2O2DGX+8m5OVqEcbB9HRBvuYM9pgrjEFUg30A9LmXNlTAUj4S9kgtGyrMbTzVjH7E+s5Re2yg==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.7
@@ -3093,7 +3093,7 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.19.11
-      postcss: 8.4.32
+      postcss: 8.4.33
       rollup: 4.9.2
     optionalDependencies:
       fsevents: 2.3.3
