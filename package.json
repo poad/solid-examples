@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "private": "true",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -10,8 +11,8 @@
     "serve": "vite preview",
     "prettier:check": "prettier --check src",
     "prettier:fix": "prettier --write src",
-    "eslint:check": "eslint src",
-    "eslint:fix": "eslint --fix src",
+    "eslint:check": "eslint",
+    "eslint:fix": "eslint --fix",
     "lint": "pnpm run --parallel /^.*:check$/",
     "lint-fix": "pnpm run /^.*:fix$/"
   },
