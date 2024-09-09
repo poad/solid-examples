@@ -15,16 +15,17 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-render(
-  () => (
-    <>
-      <Router>
-        <Route path="/" component={App} />
-        <Route path="/about" component={About} />
-        <Route path="/test/:id" component={Test} />
-      </Router>
-    </>
-  ),
-  root!,
-);
+if (root) {
+  render(
+    () => (
+      <>
+        <Router>
+          <Route path="/" component={App} />
+          <Route path="/about" component={About} />
+          <Route path="/test/:id" component={Test} />
+        </Router>
+      </>
+    ),
+    root,
+  );
+}
