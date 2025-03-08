@@ -1,13 +1,9 @@
 // @ts-check
 
 import eslint from '@eslint/js';
-// @ts-expect-error ignore type errors
 import stylistic from '@stylistic/eslint-plugin';
-// @ts-expect-error ignore type errors
 import stylisticTs from '@stylistic/eslint-plugin-ts';
-// @ts-expect-error ignore type errors
 import stylisticJsx from '@stylistic/eslint-plugin-jsx';
-// @ts-expect-error ignore type errors
 import tseslint from 'typescript-eslint';
 // @ts-expect-error ignore type errors
 import importPlugin from 'eslint-plugin-import';
@@ -15,12 +11,16 @@ import pluginPromise from 'eslint-plugin-promise'
 
 import solid from 'eslint-plugin-solid';
 
+import { includeIgnoreFile } from '@eslint/compat';
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const gitignorePath = path.resolve(__dirname, ".gitignore");
 
 export default tseslint.config(
-  eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
-  pluginPromise.configs['flat/recommended'],
+  includeIgnoreFile(gitignorePath),
   {
     ignores: [
       '**/*.d.ts',
@@ -32,6 +32,10 @@ export default tseslint.config(
       'dist',
     ],
   },
+  eslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
+  pluginPromise.configs['flat/recommended'],
   {
     files: ['src/**/*.{ts,tsx}'],
     ...importPlugin.flatConfigs.recommended,
