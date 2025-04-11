@@ -34,7 +34,7 @@ jobs:
     - name: lint
       env:
         CI: true
-      run: bun run lint
+      run: bun run --bun lint
 
     - name: build
       env:

@@ -1,0 +1,45 @@
+{
+  "name": "@solid-examples/with-farm-poku",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "farm start",
+    "start": "farm start",
+    "build": "farm build",
+    "preview": "farm preview",
+    "clean": "farm clean",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix",
+    "test": "poku --parallel ."
+  },
+  "dependencies": {
+    "solid-js": "^1.9.5"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.8",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.24.0",
+    "@farmfe/cli": "^1.0.4",
+    "@farmfe/core": "^1.7.2",
+    "@solidjs/router": "^0.15.3",
+    "@solidjs/testing-library": "^0.8.10",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@stylistic/eslint-plugin-js": "^4.2.0",
+    "@stylistic/eslint-plugin-jsx": "^4.2.0",
+    "@stylistic/eslint-plugin-plus": "^4.2.0",
+    "@stylistic/eslint-plugin-ts": "^4.2.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/user-event": "^14.6.1",
+    "eslint": "^9.24.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-solid": "^0.14.5",
+    "jsdom": "^26.0.0",
+    "poku": "^3.0.2",
+    "solid-refresh": "^0.7.5",
+    "tsx": "^4.19.3",
+    "typescript-eslint": "^8.29.1",
+    "vite": "^6.2.6",
+    "vite-plugin-solid": "^2.11.6"
+  }
+}
