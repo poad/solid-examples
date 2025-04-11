@@ -9,9 +9,13 @@ updates:
     rebase-strategy: auto
     assignees:
       - poad
+    groups:
+      actions:
+        patterns:
+          - '*'
 
   - package-ecosystem: npm
-    directoris:
+    directories:
       - '/'
       - '/basic/'
       - '/solid-element/'
@@ -29,6 +33,6 @@ updates:
     assignees:
       - poad
     groups:
-      packages:
+      npm:
         patterns:
           - '*'
