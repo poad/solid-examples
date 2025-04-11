@@ -1,0 +1,8 @@
+packages:
+  - './basic'
+  - './solid-element'
+  - './solid-start'
+  - './with-farm-poku'
+  - './with-rspack'
+  - './with-vanila-extract'
+  - './with-vite-pages'

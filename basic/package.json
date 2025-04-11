@@ -1,13 +1,16 @@
 {
-  "name": "solid-examples",
+  "name": "@solid-examples/basic",
   "version": "0.0.0",
   "description": "",
   "private": "true",
   "type": "module",
   "scripts": {
-    "build": "pnpm -r --if-present --parallel build",
-    "lint": "pnpm -r --if-present --parallel lint",
-    "lint-fix": "pnpm -r --if-present --parallel lint-fix"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix"
   },
   "license": "MIT",
   "devDependencies": {
@@ -24,12 +27,14 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-solid": "^0.14.5",
-    "pnpm": "^10.8.0",
-    "prettier": "^3.5.3",
+    "solid-devtools": "^0.34.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1",
     "vite": "^6.2.6",
     "vite-plugin-solid": "^2.11.6"
   },
-  "packageManager": "pnpm@10.8.0"
+  "dependencies": {
+    "@solidjs/router": "^0.15.3",
+    "solid-js": "^1.9.5"
+  }
 }
