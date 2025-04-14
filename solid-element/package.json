@@ -21,13 +21,13 @@
     "@stylistic/eslint-plugin-plus": "^4.2.0",
     "@stylistic/eslint-plugin-ts": "^4.2.0",
     "@testing-library/jest-dom": "^6.6.3",
-    "@types/node": "^22.14.0",
+    "@types/node": "^22.14.1",
     "babel-preset-solid": "^1.9.5",
     "eslint": "^9.24.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-solid": "^0.14.5",
-    "jsdom": "^26.0.0",
+    "jsdom": "^26.1.0",
     "solid-devtools": "^0.34.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1",
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "component-register": "^0.8.7",
-    "lit-html": "^3.2.1",
+    "lit-html": "^3.3.0",
     "solid-element": "^1.9.1",
     "solid-js": "^1.9.5"
   }
