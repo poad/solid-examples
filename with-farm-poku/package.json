@@ -13,7 +13,7 @@
     "test": "poku --parallel ."
   },
   "dependencies": {
-    "solid-js": "^1.9.5"
+    "solid-js": "^1.9.6"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.8",
@@ -37,8 +37,8 @@
     "jsdom": "^26.1.0",
     "poku": "^3.0.2",
     "solid-refresh": "^0.7.5",
-    "tsx": "^4.19.3",
-    "typescript-eslint": "^8.31.0",
+    "tsx": "^4.19.4",
+    "typescript-eslint": "^8.31.1",
     "vite": "^6.3.4",
     "vite-plugin-solid": "^2.11.6"
   }
