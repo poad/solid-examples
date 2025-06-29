@@ -1,17 +1,9 @@
 // @ts-check
 
 import eslint from '@eslint/js';
-// @ts-expect-error ignore type errors
 import stylistic from '@stylistic/eslint-plugin';
-// @ts-expect-error ignore type errors
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-// @ts-expect-error ignore type errors
-import stylisticJsx from '@stylistic/eslint-plugin-jsx';
-// @ts-expect-error ignore type errors
 import tseslint from 'typescript-eslint';
-// @ts-expect-error ignore type errors
 import importPlugin from 'eslint-plugin-import';
-// @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
 
 import solid from 'eslint-plugin-solid';
@@ -44,8 +36,8 @@ export default tseslint.config(
     },
     plugins: {
       '@stylistic': stylistic,
-      '@stylistic/ts': stylisticTs,
-      '@stylistic/jsx': stylisticJsx,
+      '@stylistic/ts': stylistic,
+      '@stylistic/jsx': stylistic,
       solid,
     },
     settings: {

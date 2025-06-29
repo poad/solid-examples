@@ -3,8 +3,6 @@
 // @ts-ignore
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import tseslint from 'typescript-eslint';
 // @ts-ignore
 import eslintImport from "eslint-plugin-import";
@@ -18,8 +16,6 @@ const compat = new FlatCompat();
 
 
 export default tseslint.config(
-  eslint.configs.recommended,
-  ...tseslint.configs.recommended,
   {
     ignores: [
       '**/*.d.ts',
@@ -36,12 +32,14 @@ export default tseslint.config(
       '.output',
     ],
   },
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
   {
     files: ['src/*.{ts,tsx}', 'src/**/*.{ts,tsx}'],
     plugins: {
       '@stylistic': stylistic,
-      '@stylistic/ts': stylisticTs,
-      '@stylistic/jsx': stylisticJsx,
+      '@stylistic/ts': stylistic,
+      '@stylistic/jsx': stylistic,
     },
     rules: {
       '@stylistic/semi': 'error',
@@ -56,9 +54,12 @@ export default tseslint.config(
       import: eslintImport,
       solid,
     },
+    // @ts-ignore
     extends: [
       ...tseslint.configs.recommended,
+      // @ts-ignore
       ...compat.config(eslintImport.configs.recommended),
+      // @ts-ignore
       ...compat.config(eslintImport.configs.typescript),
     ],
     settings: {
