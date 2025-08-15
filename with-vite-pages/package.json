@@ -15,18 +15,18 @@
   "license": "MIT",
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.32.0",
+    "@eslint/js": "^9.33.0",
     "@solidjs/testing-library": "^0.8.10",
-    "@stylistic/eslint-plugin": "^5.2.2",
-    "@testing-library/jest-dom": "^6.6.4",
-    "eslint": "^9.32.0",
+    "@stylistic/eslint-plugin": "^5.2.3",
+    "@testing-library/jest-dom": "^6.7.0",
+    "eslint": "^9.33.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-solid": "^0.14.5",
     "jsdom": "^26.1.0",
     "solid-devtools": "^0.34.3",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.39.0",
+    "typescript-eslint": "^8.39.1",
     "vite": "^6.3.5",
     "vite-plugin-pages": "^0.33.1",
     "vite-plugin-solid": "^2.11.8",
@@ -34,6 +34,6 @@
   },
   "dependencies": {
     "@solidjs/router": "^0.13.6",
-    "solid-js": "^1.9.8"
+    "solid-js": "^1.9.9"
   }
 }
