@@ -1,13 +1,12 @@
 // @ts-check
 
+import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
-import tseslint from 'typescript-eslint';
-import eslintImport from 'eslint-plugin-import';
-
-import { FlatCompat } from '@eslint/eslintrc';
-
-import solid from 'eslint-plugin-solid';
+import {parser, configs} from 'typescript-eslint';
+import importPlugin from 'eslint-plugin-import';
+import pluginPromise from 'eslint-plugin-promise';
+import solid from "eslint-plugin-solid/configs/typescript";
 
 import { includeIgnoreFile } from '@eslint/compat';
 import path from 'node:path';
@@ -17,9 +16,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const gitignorePath = path.resolve(__dirname, '.gitignore');
 
-const compat = new FlatCompat();
-
-export default tseslint.config(
+export default defineConfig(
   includeIgnoreFile(gitignorePath),
   {
     ignores: [
@@ -29,66 +26,55 @@ export default tseslint.config(
       'src/stories',
       '**/*.css',
       'node_modules/**/*',
-      './.next/*',
-      'out',
-      '.storybook',
       'dist',
-      '.vinxi',
-      '.output',
     ],
   },
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
-  {
-    files: ['src/*.{ts,tsx}', 'src/**/*.{ts,tsx}'],
-    plugins: {
-      '@stylistic': stylistic,
-      '@stylistic/ts': stylistic,
-      '@stylistic/jsx': stylistic,
-    },
-    rules: {
-      '@stylistic/semi': 'error',
-      // '@stylistic/indent': ['error', 2],
-      '@stylistic/comma-dangle': ['error', 'always-multiline'],
-    },
-  },
+  ...configs.strict,
+  ...configs.stylistic,
+  // @ts-expect-error eslint-plugin-promise has no types
+  pluginPromise.configs['flat/recommended'],
   {
     files: ['src/**/*.{ts,tsx}'],
-    plugins: {
-      import: eslintImport,
-      solid,
+    ...solid,
+    languageOptions: {
+      parser,
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      parserOptions: {
+        project: './tsconfig.json',
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
-    // @ts-ignore
     extends: [
-      ...tseslint.configs.recommended,
-      // @ts-ignore
-      ...compat.config(eslintImport.configs.recommended),
-      // @ts-ignore
-      ...compat.config(eslintImport.configs.typescript),
+      importPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.typescript,
     ],
+    plugins: {
+      '@stylistic': stylistic,
+    },
     settings: {
+      'import/parsers': {
+        espree: ['.js', '.cjs', '.mjs'],
+        '@typescript-eslint/parser': ['.ts'],
+      },
       'import/internal-regex': '^~/',
       'import/resolver': {
-        node: {
-          extensions: ['.ts', '.tsx'],
-        },
-        typescript: {
-          alwaysTryTypes: true,
-        },
+        node: true,
+        typescript: true,
       },
     },
     rules: {
+      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/quotes': ['error', 'single'],
       'import/namespace': 'off',
+      'import/no-unresolved': 'off',
+      'import/default': 'off',
+      'import/no-duplicates': 'off',
       'import/no-named-as-default': 'off',
       'import/no-named-as-default-member': 'off',
-      'import/no-unresolved': 'off',
-      'import/no-duplicates': 'off',
-      'import/default': 'off',
-    }
-  },
-  {
-    rules: {
-      'semi': ['error', 'always'],
     },
   },
 );
