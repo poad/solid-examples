@@ -26,7 +26,7 @@
     "jsdom": "^26.1.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.1",
-    "vite": "^7.1.10",
+    "vite": "^6.4.1",
     "vite-plugin-solid": "^2.11.9",
     "vitest": "^3.2.4"
   },
