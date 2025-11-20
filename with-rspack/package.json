@@ -19,7 +19,7 @@
     "@rsbuild/plugin-eslint": "^1.1.2",
     "@rsbuild/plugin-solid": "1.0.5",
     "@solidjs/router": "^0.15.4",
-    "@stylistic/eslint-plugin": "^5.6.0",
+    "@stylistic/eslint-plugin": "^5.6.1",
     "@tailwindcss/postcss": "^4.1.17",
     "autoprefixer": "^10.4.22",
     "eslint": "^9.39.1",

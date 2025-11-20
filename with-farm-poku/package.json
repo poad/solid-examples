@@ -23,7 +23,7 @@
     "@farmfe/core": "^1.7.11",
     "@solidjs/router": "^0.15.4",
     "@solidjs/testing-library": "^0.8.10",
-    "@stylistic/eslint-plugin": "^5.6.0",
+    "@stylistic/eslint-plugin": "^5.6.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/user-event": "^14.6.1",
     "eslint": "^9.39.1",
