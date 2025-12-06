@@ -24,6 +24,7 @@ updates:
       - '/with-rspack/'
       - '/with-vanila-extract/'
       - '/with-vite-pages/'
+      - '/tanstack-start-example/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo

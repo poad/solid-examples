@@ -6,6 +6,7 @@ packages:
   - ./with-rspack
   - ./with-vanila-extract
   - ./with-vite-pages
+  - ./tanstack-start-example
 
 overrides:
   glob@>=10.3.7 <=11.0.3: '>=11.1.0'
