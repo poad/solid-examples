@@ -13,7 +13,7 @@
     "test": "poku --parallel ."
   },
   "dependencies": {
-    "solid-js": "^1.9.10"
+    "solid-js": "^1.9.11"
   },
   "devDependencies": {
     "@eslint/compat": "^2.0.1",
@@ -23,7 +23,7 @@
     "@farmfe/core": "^1.7.11",
     "@solidjs/router": "^0.15.4",
     "@solidjs/testing-library": "^0.8.10",
-    "@stylistic/eslint-plugin": "^5.7.0",
+    "@stylistic/eslint-plugin": "^5.7.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/user-event": "^14.6.1",
     "eslint": "^9.39.2",

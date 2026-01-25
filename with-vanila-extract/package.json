@@ -16,7 +16,7 @@
     "@eslint/compat": "^2.0.1",
     "@eslint/js": "^9.39.2",
     "@solidjs/testing-library": "^0.8.10",
-    "@stylistic/eslint-plugin": "^5.7.0",
+    "@stylistic/eslint-plugin": "^5.7.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@vanilla-extract/vite-plugin": "^5.1.4",
     "eslint": "^9.39.2",
@@ -33,6 +33,6 @@
   "dependencies": {
     "@solidjs/router": "^0.15.4",
     "@vanilla-extract/css": "^1.18.0",
-    "solid-js": "^1.9.10"
+    "solid-js": "^1.9.11"
   }
 }
