@@ -18,7 +18,7 @@
     "@solidjs/testing-library": "^0.8.10",
     "@stylistic/eslint-plugin": "^5.7.1",
     "@testing-library/jest-dom": "^6.9.1",
-    "@types/node": "^24.10.10",
+    "@types/node": "^24.10.11",
     "babel-preset-solid": "^1.9.10",
     "eslint": "^9.39.2",
     "eslint-plugin-import": "^2.32.0",
