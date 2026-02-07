@@ -1,10 +1,9 @@
-// @ts-check
-
 import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import {parser, configs} from 'typescript-eslint';
 import importPlugin from 'eslint-plugin-import';
+// @ts-expect-error ignore plugin type
 import pluginPromise from 'eslint-plugin-promise';
 import solid from "eslint-plugin-solid/configs/typescript";
 
@@ -32,7 +31,6 @@ export default defineConfig(
   eslint.configs.recommended,
   ...configs.strict,
   ...configs.stylistic,
-  // @ts-expect-error eslint-plugin-promise has no types
   pluginPromise.configs['flat/recommended'],
   {
     files: ['src/**/*.{ts,tsx}'],
