@@ -19,7 +19,7 @@
     "@stylistic/eslint-plugin": "^5.9.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@vanilla-extract/vite-plugin": "^5.1.4",
-    "eslint": "^10.0.0",
+    "eslint": "^10.0.1",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-solid": "^0.14.5",
