@@ -32,7 +32,7 @@
     "eslint-plugin-solid": "^0.14.5",
     "jiti": "^2.6.1",
     "jsdom": "^26.1.0",
-    "serve": "^14.2.5",
+    "serve": "^14.2.6",
     "solid-js": "^1.9.11",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1",
