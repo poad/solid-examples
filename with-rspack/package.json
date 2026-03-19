@@ -20,7 +20,7 @@
     "@rsbuild/plugin-solid": "^1.1.1",
     "@solidjs/router": "^0.15.4",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@tailwindcss/postcss": "^4.2.1",
+    "@tailwindcss/postcss": "^4.2.2",
     "autoprefixer": "^10.4.27",
     "eslint": "^10.0.3",
     "eslint-plugin-boundaries": "^5.4.0",
@@ -29,9 +29,9 @@
     "eslint-plugin-solid": "^0.14.5",
     "jiti": "^2.6.1",
     "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.1",
+    "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.57.0",
+    "typescript-eslint": "^8.57.1",
     "vite-plugin-solid": "^2.11.11"
   },
   "dependencies": {
