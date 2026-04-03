@@ -20,7 +20,6 @@ updates:
       - '/basic/'
       - '/solid-element/'
       - '/solid-start/'
-      - '/with-farm-poku/'
       - '/with-rspack/'
       - '/with-vanila-extract/'
       - '/with-vite-pages/'
@@ -31,6 +30,8 @@ updates:
     allow:
       - dependency-type: all
     rebase-strategy: auto
+    cooldown:
+      default-days: 7
     assignees:
       - poad
     groups:
