@@ -11,12 +11,14 @@ minimumReleaseAge: 10080 # 7 days in minutes
 minimumReleaseAgeExclude:
   - lodash@4.18.1
   - lodash-es@4.18.1
+  - defu@6.1.6
 
 overrides:
   '@eslint/js': '>=10'
   brace-expansion@<1.1.13: '>=1.1.13'
   brace-expansion@>=2.0.0 <2.0.3: '>=2.0.3'
   chokidar: '>=5'
+  defu@<=6.1.4: '>=6.1.5'
   eslint: '>=10'
   h3@<1.15.6: '>=1.15.6'
   h3@<1.15.9: '>=1.15.9'
