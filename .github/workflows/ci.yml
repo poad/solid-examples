@@ -40,4 +40,4 @@ jobs:
     - name: build
       env:
         CI: true
-      run: bun run --bun build
+      run: bun run build

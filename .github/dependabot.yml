@@ -19,7 +19,6 @@ updates:
       - '/'
       - '/basic/'
       - '/solid-element/'
-      - '/solid-start/'
       - '/with-rspack/'
       - '/with-vanila-extract/'
       - '/with-vite-pages/'
