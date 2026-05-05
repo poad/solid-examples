@@ -21,11 +21,10 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-npx -y pnpm@latest self-update && pnpm install -r && rm -rf pnpm-lock.yaml && pnpm up -r && pnpm audit --fix && pnpm up -r && pnpm -r --if-present lint-fix && pnpm build
-result=$?
-if [ $result -ne 0 ]; then
+
+if ! (rm -rf node_modules && npx -y pnpm@latest self-update latest-11 && pnpm install -r && rm -rf pnpm-lock.yaml && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm -r --if-present lint-fix && pnpm build); then
   cd "${CUR}" || exit
-  exit $result
+  exit 1
 fi
 
 cd "${CURRENT}" || exit
