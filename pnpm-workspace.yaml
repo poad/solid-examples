@@ -4,6 +4,8 @@ packages:
   - ./with-rspack
   - ./with-vanila-extract
   - ./with-vite-pages
+  - ./with-vite-tsrx
+
 allowBuilds:
   core-js: false
   esbuild: false
