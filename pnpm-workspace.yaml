@@ -15,6 +15,7 @@ minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
   - devalue@5.8.1
+  - ws@8.20.1
 
 overrides:
   chokidar: '>=5'
@@ -23,6 +24,7 @@ overrides:
   handlebars@>=4.0.0 <=4.7.8: '>=4.7.9'
   handlebars@>=4.6.0 <=4.7.8: '>=4.7.9'
   semver: '>=7'
+  ws@>=8.0.0 <8.20.1: ^8.20.1
 
 trustPolicy: no-downgrade
 trustPolicyExclude:
