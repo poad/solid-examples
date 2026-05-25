@@ -19,7 +19,7 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@vanilla-extract/vite-plugin": "^5.2.2",
-    "eslint": "^10.3.0",
+    "eslint": "^10.4.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import-x": "^4.16.2",
     "eslint-plugin-promise": "^7.3.0",
@@ -28,12 +28,12 @@
     "jsdom": "^26.1.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.59.3",
-    "vite": "^8.0.12",
+    "vite": "^8.0.13",
     "vitest": "^4.1.6"
   },
   "dependencies": {
     "@solidjs/router": "^0.15.4",
     "@vanilla-extract/css": "^1.20.1",
-    "solid-js": "^1.9.12"
+    "solid-js": "^1.9.13"
   }
 }

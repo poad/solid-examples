@@ -2,7 +2,6 @@ packages:
   - ./basic
   - ./solid-element
   - ./with-rspack
-  - ./with-tanstack-start
   - ./with-vanila-extract
   - ./with-vite-pages
   - ./with-vite-tsrx
@@ -20,6 +19,8 @@ minimumReleaseAgeExclude:
   - h3@2.0.1
   - h3@2.0.1-rc.22
   - srvx@0.11.13
+
+  - eslint@10.4.0
 
 overrides:
   chokidar: '>=5'
