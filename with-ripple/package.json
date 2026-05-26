@@ -1,0 +1,41 @@
+{
+  "name": "with-ripple",
+  "version": "1.0.0",
+  "description": "A Ripple application created with create-ripple",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "typecheck": "tsrx-tsc --noEmit",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@ripple-ts/language-server": "latest",
+    "@ripple-ts/vite-plugin": "latest",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "@tsrx/eslint-parser": "latest",
+    "@tsrx/eslint-plugin": "latest",
+    "@tsrx/typescript-plugin": "latest",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import-x": "^4.16.2",
+    "eslint-plugin-promise": "^7.3.0",
+    "jiti": "^2.7.0",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.4",
+    "vite": "^8.0.13"
+  },
+  "dependencies": {
+    "ripple": "latest"
+  }
+}

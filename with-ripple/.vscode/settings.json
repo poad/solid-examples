@@ -1,0 +1,15 @@
+{
+	"tailwindCSS.includeLanguages": {
+		"ripple": "html"
+	},
+	"tailwindCSS.classAttributes": [
+		"class",
+		"className"
+	],
+	"files.associations": {
+		"*.tsrx": "ripple"
+	},
+	"editor.quickSuggestions": {
+		"strings": true
+	}
+}

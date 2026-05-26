@@ -29,9 +29,9 @@
     "jsdom": "^26.1.0",
     "solid-devtools": "^0.34.5",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.59.3",
+    "typescript-eslint": "^8.59.4",
     "vite": "^8.0.13",
-    "vite-plugin-babel": "^1.7.1",
+    "vite-plugin-babel": "^1.7.3",
     "vite-plugin-solid": "^2.11.12",
     "vitest": "^3.2.4"
   },
