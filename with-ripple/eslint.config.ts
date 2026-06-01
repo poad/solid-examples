@@ -1,14 +1,12 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { defineConfig, includeIgnoreFile } from 'eslint/config';
-import { configs } from 'typescript-eslint';
+import { configs, parser } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
-import prettier from 'eslint-config-prettier';
 import { importX, createNodeResolver } from 'eslint-plugin-import-x';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 // @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
-import ripple from '@tsrx/eslint-plugin';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -28,26 +26,24 @@ export default defineConfig(
       'dist',
     ],
   },
-  // eslint.configs.recommended,
   configs.strict,
   configs.stylistic,
   pluginPromise.configs['flat/recommended'],
   importX.flatConfigs.recommended,
   importX.flatConfigs.typescript,
-  ripple.configs.recommended,
   {
-    plugins: {
-      '@stylistic': stylistic,
-    },
+    files: ['**/*.tsx', '**/*.ts', '*.js'],
     languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
+      parser,
       parserOptions: {
         projectService: {
           allowDefaultProject: ['eslint.config.ts'],
         },
         tsconfigRootDir: __dirname,
       },
+    },
+    plugins: {
+      '@stylistic': stylistic,
     },
     settings: {
       'import-x/resolver-next': [
@@ -74,15 +70,6 @@ export default defineConfig(
           ],
         },
       ],
-    },
-  },
-  {
-    files: ['**/*.trsx'],
-    ...prettier,
-  },
-  {
-    files: ['**/*.tsx', '**/*.ts', '*.js'],
-    rules: {
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/indent': ['error', 2],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
