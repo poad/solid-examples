@@ -1,7 +1,6 @@
 packages:
   - ./basic
   - ./solid-element
-  - ./with-ripple
   - ./with-rspack
   - ./with-vanila-extract
   - ./with-vite-pages
@@ -20,7 +19,6 @@ minimumReleaseAgeExclude:
   - srvx@0.11.13
   - tinyexec@1.2.3
 
-  - '@ripple-ts/*'
   - '@rolldown/*'
   - '@tsrx/*'
 
@@ -32,7 +30,6 @@ overrides:
   semver: '>=7'
   srvx@<0.11.13: ^0.11.13
   ws@>=8.0.0 <8.20.1: ^8.20.1
-  '@ripple-ts/adapter': ^0.3
   vite: ^8.0.14
 
 trustPolicy: no-downgrade
