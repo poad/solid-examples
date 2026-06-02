@@ -21,7 +21,6 @@ updates:
       - '/'
       - '/basic/'
       - '/solid-element/'
-      - '/with-ripple/'
       - '/with-rspack/'
       - '/with-vanila-extract/'
       - '/with-vite-pages/'
