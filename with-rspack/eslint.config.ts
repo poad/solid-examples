@@ -1,6 +1,6 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, includeIgnoreFile } from 'eslint/config';
 import eslint from '@eslint/js';
 import { configs, parser } from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
@@ -10,8 +10,6 @@ import boundaries from 'eslint-plugin-boundaries';
 
 // @ts-expect-error ignore type errors
 import pluginPromise from 'eslint-plugin-promise';
-
-import { includeIgnoreFile } from '@eslint/compat';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -28,9 +26,6 @@ export default defineConfig(
       '**/*.js',
     ],
   },
-  eslint.configs.recommended,
-  ...configs.strict,
-  ...configs.stylistic,
   pluginPromise.configs['flat/recommended'],
   {
     files: ['**/*.ts'],
@@ -49,6 +44,10 @@ export default defineConfig(
       boundaries,
     },
     extends: [
+      eslint.configs.recommended,
+      configs.strict,
+      configs.stylistic,
+
       'import-x/flat/recommended',
     ],
     settings: {
