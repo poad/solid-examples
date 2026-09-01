@@ -18,6 +18,9 @@ minimumReleaseAgeExclude:
   - handlebars@4.7.9
   - brace-expansion@5.0.8
   - js-yaml@4.3.1
+  - '@tsrx/core@0.1.62'
+  - '@tsrx/solid@0.1.62'
+  - '@tsrx/vite-plugin-solid@0.0.92'
 
 overrides:
   chokidar: '>=5'

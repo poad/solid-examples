@@ -37,8 +37,8 @@
   },
   "dependencies": {
     "@solidjs/router": "^1.0.0",
-    "@tsrx/solid": "^0.1.61",
-    "@tsrx/vite-plugin-solid": "^0.0.90",
+    "@tsrx/solid": "^0.1.62",
+    "@tsrx/vite-plugin-solid": "^0.0.92",
     "solid-js": "^1.9.15"
   }
 }

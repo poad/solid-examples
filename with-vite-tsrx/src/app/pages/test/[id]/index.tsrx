@@ -1,6 +1,6 @@
 import { A, useParams } from '@solidjs/router';
 
-export default component Test() {
+export default function Test() @{
   const { id } = useParams();
     <>
       <h1>{id}</h1>

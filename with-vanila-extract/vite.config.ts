@@ -1,7 +1,4 @@
-/// <reference types="vitest" />
-/// <reference types="vite/client" />
-
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import solidPlugin from 'vite-plugin-solid';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 

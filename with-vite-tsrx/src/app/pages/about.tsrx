@@ -1,6 +1,6 @@
 import { A } from '@solidjs/router';
 
-export component About() {
+export function About() @{
     <>
       <h1>test</h1>
       <p>
