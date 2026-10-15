@@ -28,13 +28,13 @@
     "eslint-plugin-promise": "^7.3.0",
     "eslint-plugin-solid": "^0.15.0",
     "jiti": "^2.7.0",
-    "postcss": "^8.5.28",
+    "postcss": "^8.5.29",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.71.0",
+    "typescript-eslint": "^8.71.1",
     "vite-plugin-solid": "^2.11.14"
   },
   "dependencies": {
-    "solid-js": "^1.9.15"
+    "solid-js": "^1.9.17"
   }
 }
