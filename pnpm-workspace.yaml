@@ -14,17 +14,14 @@ allowBuilds:
 minimumReleaseAge: 10080 # 7 days in minutes
 
 minimumReleaseAgeExclude:
-  - pnpm@12.17.0
-  - handlebars@4.7.10
-  - minimatch@11.0.1
-  - '@isaacs/nonrecursive-glob-match@1.0.1'
+  - pnpm@12.18.0
 
 overrides:
   chokidar: '>=5'
-  handlebars@>=4.0.0 <=4.7.9: ^4.7.10
-  minimatch@<11.0.1: ^11.0.1
+  minimatch@>=7.0.0 <11.0.1: ^11.0.1
   semver: '>=7'
-  seroval@<=1.6.2: ^1.6.3
+  seroval@<=1.6.7: ^1.6.8
+  seroval@>=1.5.5 <1.6.10: ^1.6.10
 
 trustPolicy: no-downgrade
 trustPolicyExclude:

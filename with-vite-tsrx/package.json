@@ -19,27 +19,27 @@
     "@eslint/eslintrc": "^3.3.7",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@tsrx/eslint-plugin": "^0.5.2",
-    "@tsrx/typescript-plugin": "^0.5.2",
-    "@types/node": "^24.19.2",
-    "eslint": "^10.13.0",
+    "@tsrx/eslint-plugin": "^0.6.3",
+    "@tsrx/typescript-plugin": "^0.6.3",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
     "eslint-import-resolver-typescript": "^4.4.5",
-    "eslint-plugin-boundaries": "^7.3.0",
+    "eslint-plugin-boundaries": "^7.4.0",
     "eslint-plugin-import-x": "^4.17.1",
     "eslint-plugin-promise": "^7.3.0",
     "eslint-plugin-solid": "^0.18.1",
     "jiti": "^2.7.0",
-    "oxlint": "^1.89.0",
+    "oxlint": "^1.90.0",
     "solid-devtools": "^0.34.5",
-    "typescript": "^6.0.3",
-    "typescript-eslint": "^8.72.0",
+    "typescript": "^7.0.2",
+    "typescript-eslint": "^8.72.1",
     "vite": "^8.3.5",
-    "vite-plugin-solid": "^2.11.14"
+    "vite-plugin-solid": "^2.11.15"
   },
   "dependencies": {
-    "@solidjs/router": "^1.0.0",
-    "@tsrx/solid": "^0.1.71",
-    "@tsrx/vite-plugin-solid": "^0.0.113",
-    "solid-js": "^1.9.17"
+    "@solidjs/router": "^1.0.1",
+    "@tsrx/solid": "^0.3.5",
+    "@tsrx/vite-plugin-solid": "^0.0.117",
+    "solid-js": "^1.9.18"
   }
 }
