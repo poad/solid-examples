@@ -1,6 +1,14 @@
 {
   "ignorePatterns": [],
   "sortImports": {
-    "groups": ["builtin", "external", ["internal", "subpath"], ["parent", "sibling", "index"], "type", "style", "unknown"]
+    "groups": [
+      "builtin",
+      "external",
+      ["internal", "subpath"],
+      ["parent", "sibling", "index"],
+      "type",
+      "style",
+      "unknown"
+    ]
   }
 }

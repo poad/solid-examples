@@ -1,11 +1,11 @@
-import { A, useParams } from '@solidjs/router';
+import { useParams } from '@solidjs/router';
 
 export default function Test() @{
   const { id } = useParams();
     <>
       <h1>{id}</h1>
       <p>
-        <A href="/">HOME</A>
+        <a href="/">HOME</a>
       </p>
     </>
 }

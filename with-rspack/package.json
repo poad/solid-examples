@@ -2,28 +2,34 @@
   "name": "@solid-examples/with-rspack",
   "version": "0.0.0",
   "description": "",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "rsbuild dev",
     "build": "rsbuild build",
     "serve": "rsbuild preview",
-    "lint": "oxlint",
-    "lint-fix": "oxlint --fix"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@rsbuild/core": "2.3.1",
-    "@rsbuild/plugin-babel": "^2.1.0",
-    "@rsbuild/plugin-solid": "^1.2.2",
-    "@solidjs/router": "^1.0.1",
-    "@tailwindcss/postcss": "^4.3.5",
-    "autoprefixer": "^10.6.2",
-    "oxlint": "^1.92.0",
-    "postcss": "^8.5.32",
-    "tailwindcss": "^4.3.5",
-    "typescript": "^7.0.2",
-    "vite-plugin-solid": "^2.11.15"
+    "lint": "oxfmt --check && oxlint",
+    "lint-fix": "oxfmt && oxlint --fix"
   },
   "dependencies": {
-    "solid-js": "^1.9.18"
+    "@solidjs/web": "^2.0.3",
+    "solid-js": "^2.0.3"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^2.3.2",
+    "@rsbuild/plugin-babel": "^2.1.0",
+    "@rsbuild/plugin-solid": "^2.0.0",
+    "@rspack/cli": "^2.3.2",
+    "@solidjs/router": "^2.0.0",
+    "@solidjs/vite-plugin": "^3.0.1",
+    "@tailwindcss/postcss": "^4.3.5",
+    "autoprefixer": "^10.6.2",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
+    "oxlint-tsgolint": "^7.0.2007",
+    "postcss": "^8.5.32",
+    "solid-loader": "^1.0.1",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2"
   }
 }

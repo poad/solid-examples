@@ -1,13 +1,13 @@
-import { defineConfig } from 'vite';
-import solid from 'vite-plugin-solid';
-import babel from 'vite-plugin-babel';
+import solid from "@solidjs/vite-plugin";
+import { defineConfig } from "vite";
+import babel from "vite-plugin-babel";
 
 export default defineConfig({
   plugins: [
     solid(),
     babel({
       babelConfig: {
-        presets: ['solid'],
+        plugins: ["@solidjs/babel-plugin"],
       },
     }),
   ],
