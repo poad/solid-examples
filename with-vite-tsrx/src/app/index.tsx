@@ -1,9 +1,9 @@
 /* @refresh reload */
-import { render } from 'solid-js/web';
+import { render } from '@solidjs/web';
 
 import './index.css';
 import { App } from './App';
-import { Route, Router } from '@solidjs/router';
+import { createRouter } from '@solidjs/router';
 import { About } from './pages/about.tsrx';
 import Test from './pages/test/[id]/index.tsrx';
 
@@ -15,17 +15,14 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
+const Router = createRouter({
+  routes: [
+    { path:"/", component: App },
+    { path: "/about", component: About },
+    { path:"/test/:id", component: Test },
+  ],
+});
+
 if (root) {
-  render(
-    () => (
-      <>
-        <Router>
-          <Route path="/" component={App} />
-          <Route path="/about" component={About} />
-          <Route path="/test/:id" component={Test} />
-        </Router>
-      </>
-    ),
-    root,
-  );
+  render(() => <Router>{(props) => props.children}</Router>, root);
 }

@@ -1,8 +1,6 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": [
-    "promise"
-  ],
+  "plugins": ["promise"],
   "categories": {
     "correctness": "off"
   },
@@ -49,9 +47,7 @@
   },
   "overrides": [
     {
-      "files": [
-        "**/*.ts"
-      ],
+      "files": ["**/*.ts"],
       "rules": {
         "constructor-super": "off",
         "for-direction": "error",
@@ -161,11 +157,9 @@
         "typescript/no-confusing-non-null-assertion": "error",
         "typescript/no-inferrable-types": "error",
         "typescript/prefer-for-of": "error",
-        "typescript/prefer-function-type": "error",
+        "typescript/prefer-function-type": "error"
       },
-      "plugins": [
-        "typescript"
-      ],
+      "plugins": ["typescript"],
       "env": {
         "es2026": true
       }

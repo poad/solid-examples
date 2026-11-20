@@ -1,8 +1,9 @@
-import type { Component } from 'solid-js';
+import { Counter } from "./components/Counter/index.jsx";
+import logo from "./logo.svg";
 
-import logo from './logo.svg';
-import * as styles from './app.css';
-import { Counter } from './components/Counter';
+import type { Component } from "solid-js";
+
+import * as styles from "./app.css";
 
 const App: Component = () => {
   return (

@@ -16,18 +16,20 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@tsrx/typescript-plugin": "^0.6.3",
+    "@solidjs/vite-plugin": "^3.0.1",
+    "@tsrx/typescript-plugin": "^0.7.0",
     "@types/node": "^26.6.6",
-    "oxlint": "^1.92.0",
-    "solid-devtools": "^0.34.5",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
+    "oxlint-tsgolint": "^7.0.2007",
     "typescript": "^7.0.2",
-    "vite": "^8.3.6",
-    "vite-plugin-solid": "^2.11.15"
+    "vite": "^8.3.8"
   },
   "dependencies": {
-    "@solidjs/router": "^1.0.1",
-    "@tsrx/solid": "^0.3.5",
-    "@tsrx/vite-plugin-solid": "^0.0.117",
-    "solid-js": "^1.9.18"
+    "@solidjs/router": "^2.0.0",
+    "@solidjs/web": "^2.0.3",
+    "@tsrx/solid": "^0.4.0",
+    "@tsrx/vite-plugin-solid": "^0.0.118",
+    "solid-js": "^2.0.3"
   }
 }

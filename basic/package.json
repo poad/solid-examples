@@ -1,28 +1,29 @@
 {
   "name": "@solid-examples/basic",
   "version": "0.0.0",
-  "description": "",
   "private": "true",
+  "description": "",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "oxlint",
-    "lint-fix": "oxlint --fix"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^26.6.6",
-    "oxlint": "^1.92.0",
-    "solid-devtools": "^0.34.5",
-    "typescript": "^7.0.2",
-    "vite": "^8.3.6",
-    "vite-plugin-solid": "^2.11.15"
+    "lint": "oxfmt --check && oxlint",
+    "lint-fix": "oxfmt && oxlint --fix"
   },
   "dependencies": {
-    "@solidjs/router": "^1.0.1",
-    "solid-js": "^1.9.18"
+    "@solidjs/router": "^2.0.0",
+    "@solidjs/web": "^2.0.3",
+    "solid-js": "^2.0.3"
+  },
+  "devDependencies": {
+    "@solidjs/vite-plugin": "^3.0.1",
+    "@types/node": "^26.6.6",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
   }
 }

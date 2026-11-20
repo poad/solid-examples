@@ -1,5 +1,4 @@
 import Counter from '../components/counter.tsrx';
-import { A } from '@solidjs/router';
 import styles from './App.module.css';
 
 export function App() {
@@ -7,10 +6,10 @@ export function App() {
     <div class={styles.App}>
       <header class={styles.header}>
         <p>
-          <A href="/about">about</A>
+          <a href="/about">about</a>
         </p>
         <p>
-          <A href="/test/hoge">test</A>
+          <a href="/test/hoge">test</a>
         </p>
       </header>
       <main>
