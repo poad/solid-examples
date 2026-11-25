@@ -18,17 +18,17 @@
     "@solidjs/vite-plugin": "^3.0.1",
     "@testing-library/jest-dom": "^7.0.1",
     "jsdom": "^31.0.1",
-    "oxfmt": "^0.78.0",
-    "oxlint": "^1.93.0",
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
     "oxlint-tsgolint": "^7.0.2007",
     "typescript": "^7.0.2",
     "vite": "^8.3.8",
     "vite-plugin-pages": "^0.33.3",
-    "vitest": "^5.1.0"
+    "vitest": "^5.1.1"
   },
   "dependencies": {
-    "@solidjs/router": "^2.0.0",
-    "@solidjs/web": "^2.0.3",
-    "solid-js": "^2.0.3"
+    "@solidjs/router": "^2.0.1",
+    "@solidjs/web": "^2.0.4",
+    "solid-js": "^2.0.4"
   }
 }

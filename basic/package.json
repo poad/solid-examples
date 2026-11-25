@@ -14,15 +14,15 @@
     "lint-fix": "oxfmt && oxlint --fix"
   },
   "dependencies": {
-    "@solidjs/router": "^2.0.0",
-    "@solidjs/web": "^2.0.3",
-    "solid-js": "^2.0.3"
+    "@solidjs/router": "^2.0.1",
+    "@solidjs/web": "^2.0.4",
+    "solid-js": "^2.0.4"
   },
   "devDependencies": {
     "@solidjs/vite-plugin": "^3.0.1",
     "@types/node": "^26.6.6",
-    "oxfmt": "^0.78.0",
-    "oxlint": "^1.93.0",
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
     "typescript": "^7.0.2",
     "vite": "^8.3.8"
   }

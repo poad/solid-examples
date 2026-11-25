@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@solidjs/element": "^2.0.1",
-    "@solidjs/web": "^2.0.3",
+    "@solidjs/web": "^2.0.4",
     "component-register": "^0.8.8",
     "lit-html": "^3.3.3",
-    "solid-js": "^2.0.3"
+    "solid-js": "^2.0.4"
   },
   "devDependencies": {
     "@solidjs/babel-plugin": "^2.0.2",
@@ -25,12 +25,12 @@
     "@testing-library/jest-dom": "^7.0.1",
     "@types/node": "^26.6.6",
     "jsdom": "^31.0.1",
-    "oxfmt": "^0.78.0",
-    "oxlint": "^1.93.0",
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
     "oxlint-tsgolint": "^7.0.2007",
     "typescript": "^7.0.2",
     "vite": "^8.3.8",
     "vite-plugin-babel": "^1.7.3",
-    "vitest": "^5.1.0"
+    "vitest": "^5.1.1"
   }
 }
