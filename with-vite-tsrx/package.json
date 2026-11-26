@@ -17,7 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "@solidjs/vite-plugin": "^3.0.1",
-    "@tsrx/typescript-plugin": "^0.7.2",
+    "@tsrx/typescript-plugin": "^0.7.8",
     "@types/node": "^26.6.6",
     "oxfmt": "^0.79.0",
     "oxlint": "^1.94.0",
@@ -28,8 +28,8 @@
   "dependencies": {
     "@solidjs/router": "^2.0.1",
     "@solidjs/web": "^2.0.4",
-    "@tsrx/solid": "^0.4.2",
-    "@tsrx/vite-plugin-solid": "^0.0.120",
+    "@tsrx/solid": "^0.4.8",
+    "@tsrx/vite-plugin-solid": "^0.0.126",
     "solid-js": "^2.0.4"
   }
 }

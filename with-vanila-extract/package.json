@@ -21,7 +21,7 @@
   "devDependencies": {
     "@solidjs/testing-library": "^0.8.10",
     "@solidjs/vite-plugin": "^3.0.1",
-    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/jest-dom": "^8.0.0",
     "@vanilla-extract/vite-plugin": "^5.2.6",
     "jsdom": "^31.0.1",
     "oxfmt": "^0.79.0",

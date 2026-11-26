@@ -22,7 +22,7 @@
     "@solidjs/babel-plugin": "^2.0.2",
     "@solidjs/testing-library": "1.0.0-rc.2",
     "@solidjs/vite-plugin": "^3.0.1",
-    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/jest-dom": "^8.0.0",
     "@types/node": "^26.6.6",
     "jsdom": "^31.0.1",
     "oxfmt": "^0.79.0",
